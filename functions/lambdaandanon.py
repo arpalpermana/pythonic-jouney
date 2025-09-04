@@ -10,3 +10,12 @@ print(list_data)
 
 filtered_list_data = list(filter(lambda number: number % 2 == 1, numbers))
 print(filtered_list_data)
+
+
+def math_pow(pow):
+    return lambda number: number**pow
+
+
+power_by_2 = math_pow(2)
+print(f"5 power 2 is {power_by_2(5)}")
+print(f"3 power 2 is {math_pow(2)(3)}")
